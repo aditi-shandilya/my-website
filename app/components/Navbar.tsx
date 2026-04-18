@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="flex items-center justify-between px-6 py-4 border-b border-neutral-200 bg-white">
-      <div className="font-semibold text-neutral-900">
-        Aditi
-      </div>
+    <div className="flex items-center gap-6 pl-6 pr-6 py-4 border-b border-neutral-200 bg-white">
+      <Link href="/" className="font-semibold text-neutral-900 hover:opacity-70 transition">
+        aditi
+      </Link>
 
       <div className="flex gap-2">
         <Link href="/" className="px-3 py-1.5 rounded-md text-neutral-700 hover:bg-pink-50 hover:text-neutral-900 transition">
@@ -27,3 +27,4 @@ export default function Navbar() {
     </div>
   );
 }
+
